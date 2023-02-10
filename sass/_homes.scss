@@ -9,4 +9,8 @@
 
 .home {
     background-color: $color-grey-light-1;
+
+    &__img {
+        width: 100%;
+    }
 }
