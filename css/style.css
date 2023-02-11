@@ -254,4 +254,23 @@ body {
 
 .footer {
   background-color: #101d2c;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  color: #aaa;
+  font-size: 1.75rem; }
+  .footer__items {
+    display: flex;
+    margin: 10rem 5rem;
+    text-transform: uppercase;
+    justify-content: space-around; }
+  .footer__item {
+    text-decoration: none;
+    color: #aaa;
+    transition: all .4s; }
+    .footer__item:hover {
+      background-color: red;
+      transform: translateY(-1rem); }
+  .footer__copyright--text {
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    margin: auto; }

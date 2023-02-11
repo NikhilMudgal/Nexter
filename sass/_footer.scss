@@ -1,4 +1,30 @@
 .footer {
     background-color: $color-secondary;
     grid-column: full-start / full-end;
+    color: $color-grey-light-2;
+    font-size: 1.75rem;
+    &__items {
+        display: flex;
+        margin: 10rem 5rem;
+        text-transform: uppercase;
+        justify-content: space-around;
+    }
+
+    &__item {
+        text-decoration: none;
+        color: $color-grey-light-2;
+        transition: all .4s;
+        &:hover {
+            background-color: red;
+            transform: translateY(-1rem);
+        }
+        
+    }
+
+    &__copyright--text {
+        width: 60%;
+        text-align: center;
+        align-self: center;
+        margin: auto;
+    }
 }
