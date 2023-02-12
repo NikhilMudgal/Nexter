@@ -4,6 +4,12 @@
     grid-row: 1 / -1;  // we want side bar from start to end in grid layout w.r.t row
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-row: 1 / 1;
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+      }
 }
 
 
@@ -14,6 +20,10 @@
     height: 2px;
     width: 4.5rem;
     margin-top: 4rem;
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
     &::before,
     &::after {
         background-color: #fff;
