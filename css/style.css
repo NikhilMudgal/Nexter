@@ -92,9 +92,10 @@ body {
   justify-content: center; }
   @media only screen and (max-width: 62.5em) {
     .side-bar {
-      grid-row: 1 / 1;
+      grid-row: 1 / 2;
       grid-column: 1 / -1;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      align-items: center; } }
 
 .nav-button {
   border: none;
@@ -103,10 +104,6 @@ body {
   height: 2px;
   width: 4.5rem;
   margin-top: 4rem; }
-  @media only screen and (max-width: 62.5em) {
-    .nav-button {
-      margin-top: 3rem;
-      margin-left: 2rem; } }
   .nav-button::before, .nav-button::after {
     background-color: #fff;
     height: 2px;
@@ -117,6 +114,14 @@ body {
     transform: translateY(-1.5rem); }
   .nav-button::after {
     transform: translateY(1.3rem); }
+  @media only screen and (max-width: 62.5em) {
+    .nav-button {
+      margin-top: 0;
+      margin-left: 3rem; }
+      .nav-button::before {
+        transform: translateY(-1.2rem); }
+      .nav-button::after {
+        transform: translateY(1rem); } }
 
 .header {
   background-color: #54483A;

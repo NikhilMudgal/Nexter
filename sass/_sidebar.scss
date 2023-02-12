@@ -6,9 +6,10 @@
     justify-content: center;
 
     @media only screen and (max-width: $bp-large) {
-        grid-row: 1 / 1;
+        grid-row: 1 / 2;
         grid-column: 1 / -1;
         justify-content: flex-start;
+        align-items: center;
       }
 }
 
@@ -20,10 +21,7 @@
     height: 2px;
     width: 4.5rem;
     margin-top: 4rem;
-    @media only screen and (max-width: $bp-large) {
-        margin-top: 3rem;
-        margin-left: 2rem;
-    }
+
     &::before,
     &::after {
         background-color: #fff;
@@ -35,4 +33,13 @@
 
     &::before { transform: translateY(-1.5rem); }
     &::after { transform: translateY(1.3rem); }
+
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 0;
+        margin-left: 3rem;
+
+        &::before { transform: translateY(-1.2rem); }
+        &::after { transform: translateY(1rem); }
+    }
+
 }
